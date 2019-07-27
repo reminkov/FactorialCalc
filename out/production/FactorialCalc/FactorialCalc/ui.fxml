@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FactorialCalc.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <Pane prefHeight="400.0" prefWidth="405.0" style="-fx-background-color: #cccccc;" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+      <Button layoutX="158.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#GetFactorialButtonClick" prefHeight="25.0" prefWidth="90.0" text="Get factorial" />
+      <Label layoutX="15.0" layoutY="14.0" prefHeight="17.0" prefWidth="285.0" text="Enter any positive number:" />
+      <TextField fx:id="userInput" layoutX="15.0" layoutY="35.0" prefHeight="25.0" prefWidth="375.0" />
+      <TextArea fx:id="calculationResult" disable="true" editable="false" layoutX="15.0" layoutY="68.0" prefHeight="277.0" prefWidth="375.0" wrapText="true" />
+   </Pane>
+</GridPane>
